@@ -1,0 +1,1 @@
+give @p phantom_membrane[custom_name='{"text":"Filtro de Aire Tóxico","color":"dark_purple","bold":true,"italic":false}',lore=['{"text":"Componente vital para ensamblar la Máscara de Gas.","color":"gray","italic":false}'],custom_data={mythrise_filter:1b},enchantment_glint_override=true] 1
