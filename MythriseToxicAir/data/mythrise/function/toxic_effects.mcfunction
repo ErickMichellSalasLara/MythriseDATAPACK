@@ -10,4 +10,4 @@ execute if score @s mythrise_timer matches 60.. at @s run playsound minecraft:en
 execute if score @s mythrise_timer matches 60.. run scoreboard players set @s mythrise_timer 0
 
 # Alerta en la barra de acción
-title @s actionbar {"text":"⚠️ Estás respirando aire tóxico","color":"red","bold":true}
+title @s actionbar {"text":"Estás respirando aire tóxico!","color":"red","bold":true}

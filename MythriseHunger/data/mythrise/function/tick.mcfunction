@@ -1,0 +1,1 @@
+function mythrise:player/check_hunger
