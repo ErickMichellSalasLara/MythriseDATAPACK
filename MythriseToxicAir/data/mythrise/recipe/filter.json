@@ -7,18 +7,35 @@
     " N "
   ],
   "key": {
-    "S": "minecraft:string",
-    "R": "minecraft:redstone",
-    "H": "minecraft:heart_of_the_sea",
-    "N": "minecraft:nautilus_shell"
+    "S": {
+      "item": "minecraft:string"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "H": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "N": {
+      "item": "minecraft:nautilus_shell"
+    }
   },
   "result": {
-    "id": "minecraft:phantom_membrane",
+    "id": "minecraft:echo_shard",
     "count": 1,
     "components": {
-      "minecraft:custom_name": "{\"text\":\"Filtro de Aire Tóxico\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":false}",
+      "minecraft:custom_name": {
+        "text": "Filtro de Aire Tóxico",
+        "color": "dark_purple",
+        "bold": true,
+        "italic": false
+      },
       "minecraft:lore": [
-        "{\"text\":\"Componente vital para ensamblar la Máscara de Gas.\",\"color\":\"gray\",\"italic\":false}"
+        {
+          "text": "Componente vital para ensamblar la Máscara de Gas.",
+          "color": "gray",
+          "italic": false
+        }
       ],
       "minecraft:custom_data": {
         "mythrise_filter": 1

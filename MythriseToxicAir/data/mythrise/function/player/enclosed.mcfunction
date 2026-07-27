@@ -1,5 +1,5 @@
-# Si hay un bloque solido justo arriba, se considera encerrado
-execute unless block ~ ~1 ~ #minecraft:impermeable run return 0
-
-# Puedes usar un scoreboard para marcar a jugadores encerrados si lo necesitas
-# Por ahora solo evitamos el desgaste y el daño
+# Si está en un refugio bajo techo -> se le retiran todos los efectos tóxicos
+effect clear @s minecraft:darkness
+effect clear @s minecraft:wither
+effect clear @s minecraft:slowness
+effect clear @s minecraft:mining_fatigue

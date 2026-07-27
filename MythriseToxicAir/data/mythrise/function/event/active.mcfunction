@@ -1,5 +1,6 @@
-# 1. Renderizar partículas ambientales
-function mythrise:event/visual
+# 1. Renderizar partículas cada 5 ticks (evita saturación de red y lag)
+scoreboard players add #particle_timer mythrise_timer 1
+execute if score #particle_timer mythrise_timer matches 5.. run function mythrise:event/visual
 
 # 2. Comprobar la máscara de los jugadores
 function mythrise:player/check

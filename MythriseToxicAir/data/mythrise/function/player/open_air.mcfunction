@@ -1,5 +1,5 @@
-# Si hay un bloque solido sobre la cabeza, no hay desgaste
-execute unless block ~ ~1 ~ minecraft:air run return 0
+# Si está al aire libre SIN la máscara oficial -> sufre los efectos del aire tóxico
+execute as @s[nbt=!{Inventory:[{Slot:103b,components:{"minecraft:custom_data":{mythrise_mask:1b}}}]}] run function mythrise:toxic_effects
 
-# Si está expuesto, desgasta la máscara
-function mythrise:player/damage_mask
+# Si está al aire libre CON la máscara -> está protegido (se le limpia la oscuridad)
+execute as @s[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_data":{mythrise_mask:1b}}}]}] run effect clear @s minecraft:darkness
