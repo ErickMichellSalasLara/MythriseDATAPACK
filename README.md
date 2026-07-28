@@ -10,7 +10,7 @@ Cuero | Cuero | Cuero
 
 Vidrio tinte Marron | Casco de netherite | Vidrio tinte marron
 
-      | Filtro | 
+  aire    | Filtro | aire
 
 El filtro es un crafteo aparte:
 
