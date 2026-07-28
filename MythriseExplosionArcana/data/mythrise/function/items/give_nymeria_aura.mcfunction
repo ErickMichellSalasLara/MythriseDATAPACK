@@ -1,0 +1,1 @@
+give @p beacon[custom_name='{"text":"Aura de Nymeria","color":"light_purple","bold":true,"italic":false}',lore=['{"text":"Potente aura protectora de explosiones arcanas","color":"gray","italic":false}'],custom_data=mythrise:{safe_beacon:1b}] 1

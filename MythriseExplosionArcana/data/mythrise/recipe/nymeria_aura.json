@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GYW",
+    "S*S",
+    "CCC"
+  ],
+  "key": {
+    "G": "minecraft:green_terracotta",
+    "Y": "minecraft:yellow_terracotta",
+    "W": "minecraft:white_terracotta",
+    "S": "minecraft:white_stained_glass",
+    "*": "minecraft:wither_star",
+    "C": "minecraft:crying_obsidian"
+  },
+  "result": {
+    "id": "minecraft:beacon",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": "{mythrise:{safe_beacon:1b}}",
+      "minecraft:item_name": "{\"text\":\"Aura de Nymeria\",\"color\":\"light_purple\",\"bold\":true}"
+    }
+  }
+}
