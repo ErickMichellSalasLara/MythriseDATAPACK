@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DPD",
+    "GSG",
+    "CCC"
+  ],
+  "key": {
+    "D": { "item": "minecraft:diamond_block" },
+    "P": { "item": "minecraft:purple_terracotta" },
+    "G": { "item": "minecraft:white_stained_glass" },
+    "S": { "item": "minecraft:nether_star" },
+    "C": { "item": "minecraft:crying_obsidian" }
+  },
+  "result": {
+    "id": "minecraft:spawner",
+    "components": {
+      "minecraft:item_name": "{\"text\":\"Núcleo Arcano\",\"color\":\"light_purple\",\"bold\":true}",
+      "minecraft:block_entity_data": {
+        "id": "minecraft:spawner",
+        "MaxNearbyEntities": 0,
+        "SpawnData": {
+          "entity": {
+            "id": "minecraft:marker",
+            "Tags": ["sz_init"]
+          }
+        }
+      }
+    }
+  }
+}

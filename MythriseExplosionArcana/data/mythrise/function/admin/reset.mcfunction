@@ -1,13 +1,9 @@
-# RESET
+# Fuerza el reinicio a estado inactivo de forma silenciosa
+scoreboard players set #global evento_estado 0
+scoreboard players set #global evento_timer 0
+scoreboard players set #global exp_timer 0
 
-kill @e[type=marker,tag=mythrise.safe_zone]
+# Elimina cualquier marcador de explosión pendiente
+kill @e[type=marker,tag=exp_target]
 
-kill @e[type=marker,tag=mythrise.wave]
-
-scoreboard players reset * mythrise.state
-scoreboard players reset * mythrise.animation
-scoreboard players reset * mythrise.pulse
-scoreboard players reset * mythrise.wave
-
-scoreboard players set #Arcano mythrise.event 0
-scoreboard players set #Explosion mythrise.timer 0
+tellraw @s {"text":"[Admin] El evento Arcano ha sido reseteado y forzado a inactivo.","color":"red"}

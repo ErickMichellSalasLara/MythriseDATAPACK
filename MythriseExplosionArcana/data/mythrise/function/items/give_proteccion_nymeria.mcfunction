@@ -1,0 +1,1 @@
+give @s minecraft:spawner[minecraft:item_name='{"text":"Núcleo Arcano","color":"light_purple","bold":true}',minecraft:block_entity_data={id:"minecraft:spawner",MaxNearbyEntities:0s,SpawnData:{entity:{id:"minecraft:marker",Tags:["sz_init"]}}}] 1

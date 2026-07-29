@@ -1,9 +1,5 @@
-# Aviso visual
+# Si el punto de impacto está a 11 bloques o menos del centro de una zona segura, se choca con la barrera
+execute if entity @e[type=marker,tag=safe_zone,distance=..11] run function mythrise:explosion/cancelled
 
-particle minecraft:dragon_breath ~ ~1 ~ 0.3 0.3 0.3 0.01 25 force
-
-particle minecraft:reverse_portal ~ ~1 ~ 0.2 0.2 0.2 0.02 20 force
-
-playsound minecraft:block.respawn_anchor.charge ambient @a[distance=..20] ~ ~ ~ 0.5 1.5
-
-schedule function mythrise:explosion/explosion 6t replace
+# Si no hay zonas seguras cerca, la explosión ocurre normalmente
+execute unless entity @e[type=marker,tag=safe_zone,distance=..11] run function mythrise:explosion/trigger

@@ -1,1 +1,0 @@
-execute if entity @e[type=marker,tag=mythrise.safe_zone,distance=..10] run function mythrise:aura/shield_hit
