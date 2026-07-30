@@ -1,20 +1,12 @@
 {
   "criteria": {
     "caida": {
-      "trigger": "minecraft:entity_hurt_player",
+      "trigger": "minecraft:fall_from_height",
       "conditions": {
-        "damage": {
-          "type": {
-            "tags": [
-              {
-                "id": "minecraft:is_fall",
-                "expected": true
-              }
-            ]
-          },
-          "taken": {
-            "min": 2.0,
-            "max": 2.9
+        "distance": {
+          "y": {
+            "min": 5.0,
+            "max": 5.99
           }
         }
       }
