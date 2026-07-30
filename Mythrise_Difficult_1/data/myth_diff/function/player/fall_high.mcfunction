@@ -1,7 +1,7 @@
-# Revocamos el logro
 advancement revoke @s only myth_diff:fall_high
 
-# Inyectamos el daño extra x3 y el efecto de lentitud
-damage @s 6 minecraft:magic
+# Castigo letal inmediato (18 puntos = 9 corazones)
+damage @s 18 minecraft:magic
+
 effect give @s minecraft:slowness 30 2 true
 title @s actionbar {"text":"¡Pierna fracturada!","color":"dark_red"}
