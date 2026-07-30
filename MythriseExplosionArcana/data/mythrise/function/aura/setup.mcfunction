@@ -1,11 +1,14 @@
 tag @s remove sz_init
 tag @s add safe_zone
-# Desactivamos el spawner para que no invoque más marcadores
-data modify block ~ ~ ~ SpawnData set value {}
-data modify block ~ ~ ~ MaxNearbyEntities set value 0
 
-# Generamos marcadores "dibujantes" en las 4 esquinas del área 20x20
-summon marker ~-10 ~ ~-10 {Tags:["drawer_n"]}
-summon marker ~10 ~ ~-10 {Tags:["drawer_e"]}
-summon marker ~10 ~ ~10 {Tags:["drawer_s"]}
-summon marker ~-10 ~ ~10 {Tags:["drawer_w"]}
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run tp @s ~ ~ ~
+data modify block ~ ~ ~ MaxNearbyEntities set value 0s
+
+# Limpiamos cualquier marcador viejo de pruebas anteriores
+kill @e[type=marker,tag=drawer_n]
+kill @e[type=marker,tag=drawer_e]
+kill @e[type=marker,tag=drawer_s]
+kill @e[type=marker,tag=drawer_w]
+
+# Iniciamos el reloj en 0
+scoreboard players set @s sz_timer 0

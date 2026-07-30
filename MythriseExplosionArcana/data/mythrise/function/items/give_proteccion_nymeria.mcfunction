@@ -1,1 +1,1 @@
-give @s minecraft:spawner[minecraft:item_name='{"text":"Núcleo Arcano","color":"light_purple","bold":true}',minecraft:block_entity_data={id:"minecraft:spawner",MaxNearbyEntities:0s,SpawnData:{entity:{id:"minecraft:marker",Tags:["sz_init"]}}}] 1
+give @s minecraft:spawner[minecraft:item_name='{"text":"Proteccion de Nymeria","color":"light_purple","bold":true}',minecraft:block_entity_data={id:"minecraft:spawner",Delay:5s,MinSpawnDelay:5s,MaxSpawnDelay:5s,SpawnCount:1s,MaxNearbyEntities:1s,RequiredPlayerRange:64s,SpawnData:{entity:{id:"minecraft:marker",Tags:["sz_init"]}}}] 1

@@ -1,6 +1,7 @@
 # Temporizadores originales
 scoreboard objectives add exp_timer dummy
 scoreboard objectives add border_timer dummy
+scoreboard objectives add sz_timer dummy
 
 # Nuevos marcadores para el ciclo del evento
 scoreboard objectives add evento_estado dummy
