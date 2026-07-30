@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "caida": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "minecraft:is_fall",
+                "expected": true
+              }
+            ]
+          },
+          "taken": {
+            "min": 3.0
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "myth_diff:player/fall_high"
+  }
+}
