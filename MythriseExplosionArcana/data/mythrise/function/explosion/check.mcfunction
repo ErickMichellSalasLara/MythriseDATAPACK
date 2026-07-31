@@ -1,7 +1,13 @@
 scoreboard players set #global exp_timer 0
 
-# Ahora seleccionamos a todos los jugadores (el filtro de zona se hará en el punto de impacto)
-execute as @a at @s run function mythrise:explosion/spawn
+# 1. Etiquetamos a todos los jugadores como "candidatos" para recibir una explosión
+tag @a add exp_candidate
 
-# Selecciona a los jugadores que NO estén a 10 bloques de un marcador de zona segura (30x30 = radio de 15)
-execute as @a at @s unless entity @e[type=marker,tag=safe_zone,distance=..15] run function mythrise:explosion/spawn
+# 2. Buscamos zonas seguras, creamos un cubo de 40x40x40 (20 de radio) y quitamos la etiqueta a los que estén dentro
+execute at @e[type=marker,tag=safe_zone] positioned ~-20 ~-20 ~-20 as @a[dx=40,dy=40,dz=40] run tag @s remove exp_candidate
+
+# 3. Generamos la explosión SOLO en los jugadores que conservaron la etiqueta
+execute as @a[tag=exp_candidate] at @s run function mythrise:explosion/spawn
+
+# 4. Limpiamos la etiqueta
+tag @a remove exp_candidate
