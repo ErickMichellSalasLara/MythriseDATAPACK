@@ -24,7 +24,7 @@ Redstone | Corazon del mar | Redstone
 
 # Evento de hambre (Listo)
 
-Cuando a un jugador tenga el hambre bajo (2 de comida o menos). Se le aplicara el efecto de whiter, nauseas, lentitud y darkness
+Cuando a un jugador tenga el hambre bajo (7 de comida o menos). Se le aplicara el efecto de whiter, nauseas, lentitud y darkness
 Si tiene TODA la comida se le quitara el efecto
 
 # Evento meteorologico:
@@ -37,3 +37,11 @@ Vidrio Blanco | Estrella de Wither  | Vidrio Blanco
 Obsidiana Llorosa   |  Obsidiana Llorosa   | Obsidiana Llorosa
 
 Resultado: Un beacon que delimitara el area donde se coloque donde sea 20x20 bloques.
+
+# No mending
+Datapack para "borrar" y "corromper" el hechizo de mending
+
+# Daño de caida y penalizacion por muertes
+Por cada muerte que se tenga, se le quitara un corazon de su vida maxima. Esta no puede bajar  a más de 5 corazones.
+
+Aumenta el daño por caida dependiendo de cuantos bloques caiga y se le aplicara lentitud dando a entender que tendran la pierna facturada
