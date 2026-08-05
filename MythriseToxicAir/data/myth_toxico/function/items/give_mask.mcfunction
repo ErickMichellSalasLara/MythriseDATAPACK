@@ -1,0 +1,1 @@
+give @p turtle_helmet[custom_name='{"text":"Máscara de Gas","color":"dark_red","bold":true,"italic":false}',lore=['{"text":"Te permite respirar durante el AIRE TOXICO.","color":"gray","italic":false}','{"text":"IRREPARABLE","color":"red","italic":true}'],custom_data={mythrise_mask:1b},repair_cost=999999] 1

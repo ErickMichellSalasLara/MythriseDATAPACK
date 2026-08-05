@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "coloco_zona": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:spawner"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "myth_toxico:aura/announce"
+  }
+}
